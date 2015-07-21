@@ -12,6 +12,11 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'mileszs/ack.vim'
+Plugin 'git://github.com/jamessan/vim-gnupg.git'
+Plugin 'git://github.com/tpope/vim-fugitive.git'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'git@github.com:bronson/vim-trailing-whitespace.git'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -35,8 +40,10 @@ filetype plugin indent on    " required
 filetype plugin indent on
 syntax on
 
-autocmd vimenter * if !argc() | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
+nmap =j :%!python -m json.tool<CR>
+nnoremap <F3> :set hlsearch!<CR>
 
 set nu
 set tabstop=2 shiftwidth=2 expandtab
+colorscheme CodeFactoryv3
