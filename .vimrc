@@ -16,7 +16,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'git://github.com/jamessan/vim-gnupg.git'
 Plugin 'git://github.com/tpope/vim-fugitive.git'
 Plugin 'flazz/vim-colorschemes'
-Plugin 'git@github.com:bronson/vim-trailing-whitespace.git'
+Plugin 'ntpeters/vim-better-whitespace'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
